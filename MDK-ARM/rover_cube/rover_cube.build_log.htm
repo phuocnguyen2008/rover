@@ -1,0 +1,189 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Steve Admin, NK, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+F:\DOAN\rover_cube\MDK-ARM\rover_cube.uvprojx
+Project File Date:  03/27/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+*** Warning: You are compiling one or more files of source type C++ and have selected 'use MicroLIB'. MicroLIB does not support C++!
+  
+Build target 'rover_cube'
+compiling AP_InertialSensor_Invensense.cpp...
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(787): error:  #40: expected an identifier
+  struct __rw_compile_assert<true> { enum { _C_ok }; };
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(787): error:  #484: invalid explicit instantiation declaration
+  struct __rw_compile_assert<true> { enum { _C_ok }; };
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(841): error:  #40: expected an identifier
+  struct __rw_select<true> { };
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(841): error:  #484: invalid explicit instantiation declaration
+  struct __rw_select<true> { };
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(34): error:  #819: "..." is not allowed
+  template <class RetType, class... Args>
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(34): error:  #952: a nontype template parameter may not have class type
+  template <class RetType, class... Args>
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(38): error:  #20: identifier "constexpr" is undefined
+      constexpr Functor(void *obj, RetType (*method)(void *obj, Args...))
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(38): error:  #405: member function with the same name as its class must be a constructor
+      constexpr Functor(void *obj, RetType (*method)(void *obj, Args...))
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(39): error:  #65: expected a ";"
+          : _obj(obj)
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(81): warning:  #12-D: parsing restarts here after previous syntax error
+      void *_obj;
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(85): error:  #18: expected a ")"
+      static RetType method_wrapper(void *obj, Args... args)
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(85): error:  #70: incomplete type is not allowed
+      static RetType method_wrapper(void *obj, Args... args)
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(88): error:  #20: identifier "args" is undefined
+          return (t->*method)(args...);
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/functor.h(88): error:  #18: expected a ")"
+          return (t->*method)(args...);
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\AP_HAL_Namespace.h(49): error:  #442: too few arguments for class template "Functor" 
+      FUNCTOR_TYPEDEF(MemberProc, void);
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\GPIO.h(49): error:  #254: type name is not allowed
+      FUNCTOR_TYPEDEF(irq_handler_fn_t, void, uint8_t, bool, uint32_t);
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\GPIO.h(49): error:  #443: too many arguments for class template "Functor" 
+      FUNCTOR_TYPEDEF(irq_handler_fn_t, void, uint8_t, bool, uint32_t);
+KB: Unexpected type: 0
+error type>(62): error:  #20: identifier "nullptr" is undefined
+          if (attach_interrupt(pin, (irq_handler_fn_t)nullptr, AP_HAL::GPIO::INTERRUPT_NONE)) {
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\Device.h(42): error:  #442: too few arguments for class template "Functor" 
+      FUNCTOR_TYPEDEF(PeriodicCb, void);
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\Device.h(264): error:  #321: data member initializer is not allowed
+      uint8_t _read_flag = 0;
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\Device.h(77): error:  #20: identifier "nullptr" is undefined
+          if (_checked.regs != nullptr) {
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\Device.h(132): error:  #20: identifier "nullptr" is undefined
+          return transfer(buf, sizeof(buf), nullptr, 0);
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\Device.h(159): error:  #20: identifier "nullptr" is undefined
+          return transfer(nullptr, 0, recv, recv_len);
+KB: Unexpected type: 0
+error type>(234): error:  #702: expected an "="
+          union DeviceId d {};
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(43): error:  #283: qualified name is not allowed
+      OwnPtr(std::nullptr_t) : _ptr(nullptr) { }
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(43): error:  #20: identifier "_ptr" is undefined
+      OwnPtr(std::nullptr_t) : _ptr(nullptr) { }
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(43): error:  #59: function call is not allowed in a constant expression
+      OwnPtr(std::nullptr_t) : _ptr(nullptr) { }
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(43): error:  #20: identifier "nullptr" is undefined
+      OwnPtr(std::nullptr_t) : _ptr(nullptr) { }
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(43): error:  #65: expected a ";"
+      OwnPtr(std::nullptr_t) : _ptr(nullptr) { }
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(46): warning:  #12-D: parsing restarts here after previous syntax error
+      OwnPtr(const OwnPtr<T> &other) = delete;
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(50): error:  #18: expected a ")"
+      OwnPtr(OwnPtr<U>&& other) : _ptr(other.leak()) { }
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_HAL\utility/OwnPtr.h(54): error:  #135: namespace "std"  has no member "nullptr_t"
+      OwnPtr<T>& operator=(std::nullptr_t) { clear(); return *this; }
+..\..\ardupilot-Rover-3.5.0\ardupilot-Rover-3.5.0\libraries\AP_InertialSensor\AP_InertialSensor_Invensense.cpp: 2 warnings, 30 errors
+compiling main.c...
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(787): error:  #40: expected an identifier
+  struct __rw_compile_assert<true> { enum { _C_ok }; };
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(787): error:  #484: invalid explicit instantiation declaration
+  struct __rw_compile_assert<true> { enum { _C_ok }; };
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(841): error:  #40: expected an identifier
+  struct __rw_select<true> { };
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\rw/_defs.h(841): error:  #484: invalid explicit instantiation declaration
+  struct __rw_select<true> { };
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(103): error:  #70: incomplete type is not allowed
+  struct char_traits<char>;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(108): error:  #70: incomplete type is not allowed
+  struct char_traits<wchar_t>;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(118): error:  #457: "z" is not a function or static data member
+           class _Traits _RWSTD_COMPLEX_DEFAULT (char_traits<_CharT>) >z
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(184): error:  #864: basic_streambuf is not a template
+  typedef basic_streambuf<char>                              streambuf;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\iosfwd(200): error:  #864: basic_streambuf is not a template
+  typedef basic_streambuf<wchar_t>                           wstreambuf;
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h(370): error:  #65: expected a ";"
+      _ARMABI_INLINE double _sqrt(double __x) { return sqrt(__x) }
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h(373): error:  #65: expected a ";"
+      _ARMABI_INLINE float _sqrtf(float __x) { return __sqrtf(__x) }
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(401): error:  #40: expected an identifier
+  _RWSTD_CLASS_END   // numeric_limits<float>
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(343): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_CLASS_BEGIN (_RWSTD_SPECIALIZED_CLASS
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(458): error:  #40: expected an identifier
+  _RWSTD_CLASS_END   // numeric_limits<double>
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(404): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_CLASS_BEGIN (_RWSTD_SPECIALIZED_CLASS
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(518): error:  #40: expected an identifier
+  _RWSTD_CLASS_END    // numeric_limits<long double>
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(463): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_CLASS_BEGIN (_RWSTD_SPECIALIZED_CLASS
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(563): error:  #40: expected an identifier
+  _RWSTD_SPECIALIZE_LIMITS (char, _RWSTD_CHAR_CONVERTIBLE, CHAR)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(563): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_SPECIALIZE_LIMITS (char, _RWSTD_CHAR_CONVERTIBLE, CHAR)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(565): error:  #40: expected an identifier
+  _RWSTD_SPECIALIZE_LIMITS (unsigned char,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(565): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_SPECIALIZE_LIMITS (unsigned char,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(568): error:  #40: expected an identifier
+  _RWSTD_SPECIALIZE_LIMITS (signed char, _RWSTD_CHAR_CONVERTIBLE, SCHAR)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(568): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_SPECIALIZE_LIMITS (signed char, _RWSTD_CHAR_CONVERTIBLE, SCHAR)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(570): error:  #40: expected an identifier
+  _RWSTD_SPECIALIZE_LIMITS (short int, _RWSTD_SHORT_CONVERTIBLE, SHRT)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(570): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_SPECIALIZE_LIMITS (short int, _RWSTD_SHORT_CONVERTIBLE, SHRT)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(572): error:  #40: expected an identifier
+  _RWSTD_SPECIALIZE_LIMITS (unsigned short,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(572): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_SPECIALIZE_LIMITS (unsigned short,
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(575): error:  #40: expected an identifier
+  _RWSTD_SPECIALIZE_LIMITS (int, _RWSTD_INT_CONVERTIBLE, INT)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(575): error:  #484: invalid explicit instantiation declaration
+  _RWSTD_SPECIALIZE_LIMITS (int, _RWSTD_INT_CONVERTIBLE, INT)
+C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits(577): error:  #40: expected an identifier
+  _RWSTD_SPECIALIZE_LIMITS (unsigned int,
+../Src/main.c: 0 warnings, 30 errors
+"rover_cube\rover_cube.axf" - 60 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil.STM32F4xx_DFP.2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_rover_cube
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.13.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
